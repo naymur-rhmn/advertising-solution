@@ -42,9 +42,8 @@
 }
 
 .border1 {
-  height: 150px;
+  /* some styles are written inline for responsivness */
   width: 40%;
-  /* background-color: rgb(127, 11, 185); */
   background: linear-gradient(
     100deg,
     rgb(146, 22, 209),
@@ -57,12 +56,10 @@
   z-index: 10;
 }
 .border2 {
-  height: 150px;
+  /* some styles are written inline for responsivness */
   width: 40%;
   background-color: #d6d6f7;
   position: absolute;
-  bottom: -80px;
-  left: 45%;
   opacity: 0.8;
 }
 
@@ -120,4 +117,20 @@
   background-color: #482076;
   opacity: 0.2;
   filter: blur(200px);
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .right-img-group:before {
+    height: 100px;
+    width: 120px;
+  }
+  .right-img-group:after {
+    width: 160px;
+    height: 120px;
+  }
+
+  .images-wraper:before {
+    height: 140px;
+    width: 140px;
+  }
 }
