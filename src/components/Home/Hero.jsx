@@ -4,21 +4,23 @@ import { RiArrowRightSLine, RiArrowRightLine } from "@remixicon/react";
 
 function Hero() {
   return (
-    <section className="relative h-[100vh] z-40 overflow-hidden">
+    <section className="relative z-40 pt-[130px] pb-[180px] md:pt-[210px]  md:pb-[280px]">
       {/* background */}
-      <div className="hero-bg-layer1 -z-10"></div>
-      <div className="hero-bg-layer2">
-        <div className="border1 md:h-[150px] h-[100px]"></div>
-        <div className="border2 h-[80px] md:h-[150px]  -bottom-[20px] md:-bottom-[80px] md:left-[45%] left-[60%] "></div>
+      <div className="overflow-hidden">
+        <div className="hero-bg-layer2">
+          <div className="border1 md:h-[150px] h-[100px]"></div>
+          <div className="border2 h-[80px] md:h-[150px]  -bottom-[20px] md:-bottom-[80px] md:left-[45%] left-[55%] w-[45%] md:w-[55%]"></div>
+        </div>
       </div>
-      {/* hero content */}
-      <div className="max-w-screen-lg mx-auto p-4 z-50 relative h-full">
-        <div className="w-full sm:pr-[10%] pr-5 md:pr-0 md:w-2/3 md:mt-[160px] sm:mt-[100px] mt-[80px]  text-white">
-          <h1 className="lg:text-[54px] md:text-[46px] text-[28px] sm:text-[32px] leading-normal ">
+      {/* hero body */}
+      <div className="max-w-screen-lg mx-auto px-4 z-50 h-full flex">
+        {/* hero content */}
+        <div className="w-full sm:pr-[10%] pr-5 md:pr-0 md:w-2/3 text-white">
+          <h1 className="lg:text-[54px] md:text-[46px] text-[28px] sm:text-[32px] leading-normal">
             Full-stack <span className="text-orange-300">programmatic</span>{" "}
             advertising ecosystem
           </h1>
-          <p className="text-[20px] md:text-[22px] lg:text-[26px] mb-6 mt-3">
+          <p className="text-[20px] md:text-[22px] lg:text-[26px] mb-6 mt-3 text-neutral">
             Flexible solutions for agencies and brands
           </p>
           <button className="uppercase bg-white pl-4 pr-4 py-3 md:py-3.5 text-gray-700 rounded text-sm flex gap-1 items-center group">
@@ -31,19 +33,18 @@ function Hero() {
             </span>
           </button>
         </div>
-      </div>
-      {/* right side images */}
-      <div className="right-img-group absolute top-[280px] xl:left-[61%] lg:left-[50%] md:left-[50%]  z-30 md:max-w-[675px] w-full h-auto sm:block hidden">
-        <div className="float-right images-wraper relative z-10">
-          <div className="hidden md:block absolute z-30">
-            <img className="xl:h-auto  h-[500px]" src={phone} alt="" />
-          </div>
-          <div className="-translate-y-28 translate-x-[100px]">
-            <img
-              className="xl:h-auto xl:w-full h-[300px] md:h-[500px] w-full"
-              src={console}
-              alt=""
-            />
+
+        {/* right side images */}
+        <div className="absolute w-[100%] left-0 h-[calc(100%-132px)] overflow-hidden">
+          <div className="absolute left-[62%]  w-full">
+            <div className="image-container hidden md:block">
+              <div className="absolute top-0 left-0  translate-x-[110px]">
+                <img className="" src={console} alt="" />
+              </div>
+              <div className="relative translate-y-24 z-20 h-[60%]">
+                <img className="h-[550px]" src={phone} alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
