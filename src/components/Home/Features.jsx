@@ -1,5 +1,7 @@
+import React from "react";
+
 function Features() {
-  return <div className="bg-white h-[100vh] relative">features </div>;
+  return <div>Features</div>;
 }
 
 export default Features;

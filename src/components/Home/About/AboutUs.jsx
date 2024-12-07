@@ -8,8 +8,8 @@ import GlobusSVG from "./GlobusSVG";
 
 function AboutUs() {
   return (
-    <section className="bg-white sticky -top-44 -z-0 ">
-      <div className="relative h-full w-full overflow-hidden">
+    <section className="h-full  sticky -top-[280px]">
+      <div className="h-full w-full">
         <div className="about-overlay -z-10"></div>
         <div className="max-w-screen-lg px-4 mx-auto z-50 ">
           {/* section title */}
@@ -22,7 +22,7 @@ function AboutUs() {
             </p>
           </div>
           {/* content */}
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-6">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-6 h-full">
             {/* left cols */}
             <div>
               <p className="font-light leading-relaxed">
@@ -48,29 +48,38 @@ function AboutUs() {
               </button>
             </div>
           </div>
-          <div className="flex gap-8 mt-5 ">
+        </div>
+        {/* globus and overview */}
+        <div className="h-full w-full">
+          <div className="h-full flex w-full ">
             {/* animated globus */}
-            <div className="absolute lg:w-[1000px] lg:h-[800px] lg:right-[47%] md:w-[800px] md:h-[600px] md:right-[30%] w-[1000px] h-[800px]   top-[320px] md:top-[350px] -z-50">
-              <GlobusSVG />
+            <div className="h-[800px] w-[1000px]  flex-1 relative overflow-hidden">
+              <div className="absolute h-full w-full  right-[5%] ">
+                <div className="h-[800px] w-[1000px] absolute -right-[10%]">
+                  <GlobusSVG />
+                </div>
+              </div>
             </div>
-            {/* About Overview pt-14*/}
-            <div className="grid grid-cols-2 gap-y-24 w-8/10 mx-auto lg:w-1/2 lg:ml-[50%] lg:pl-3 pb-[150px] pt-[100px]">
-              <AboutCard
-                text={"Years of expertise"}
-                number={"10"}
-                img={reward}
-              />
-              <AboutCard
-                text={"Professionals"}
-                number={"120+"}
-                img={professional}
-              />
-              <AboutCard
-                text={"Represented in 12 countries"}
-                number={"12"}
-                img={diplomat}
-              />
-              <AboutCard text={"Clients"} number={"2000+"} img={expertise} />
+            {/* About Overview */}
+            <div className="flex-1 pl-3 lg:relative absolute left-[50%] lg:left-0 -translate-x-[50%] lg:-translate-x-0 pt-[200px] lg:pt-0  w-full ">
+              <div className="grid grid-cols-2 gap-y-24 pt-24 lg:pl-0 sm:pl-[108px] pl-4 md:mx-0 w-full">
+                <AboutCard
+                  text={"Years of expertise"}
+                  number={"10"}
+                  img={reward}
+                />
+                <AboutCard
+                  text={"Professionals"}
+                  number={"120+"}
+                  img={professional}
+                />
+                <AboutCard
+                  text={"Represented in 12 countries"}
+                  number={"12"}
+                  img={diplomat}
+                />
+                <AboutCard text={"Clients"} number={"2000+"} img={expertise} />
+              </div>
             </div>
           </div>
         </div>
