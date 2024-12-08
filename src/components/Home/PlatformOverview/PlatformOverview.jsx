@@ -8,17 +8,36 @@ import { useEffect, useState } from "react";
 
 function PlatformOverview() {
   const [counter, setCounter] = useState(0);
+  const pausePoint = [30, 60];
+  const intervalDuration = 2000;
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCounter((prev) => {
-        if (prev === 100) {
-          clearInterval(interval);
-          return 100;
-        }
-        return prev + 1;
-      });
-    }, 10);
+    let interval;
+
+    const loadingCounter = () => {
+      // start interval with deep clean
+      clearInterval(interval);
+
+      interval = setInterval(() => {
+        setCounter((prev) => {
+          // stop at 100
+          if (prev >= 100) {
+            clearInterval(interval);
+            return 100;
+          }
+
+          // pause and resume interval
+          if (pausePoint.includes(prev + 1)) {
+            clearInterval(interval);
+            setTimeout(loadingCounter, intervalDuration);
+          }
+
+          return prev + 1;
+        });
+      }, 50);
+    };
+
+    loadingCounter();
     return () => clearInterval(interval);
   }, []);
 
