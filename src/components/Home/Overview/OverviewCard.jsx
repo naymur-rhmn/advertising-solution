@@ -1,4 +1,4 @@
-function AboutCard({ number, text, img }) {
+function OverviewCard({ number, text, img }) {
   return (
     <div className="border-l border-neutral flex items-center gap-3 md:px-5 px-4">
       <div className="w-[50px] h-[50px]">
@@ -14,4 +14,4 @@ function AboutCard({ number, text, img }) {
   );
 }
 
-export default AboutCard;
+export default OverviewCard;

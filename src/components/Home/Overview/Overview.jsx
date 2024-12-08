@@ -3,10 +3,10 @@ import expertise from "../../../assets/customer-relationship-management.png";
 import reward from "../../../assets/reward.png";
 import professional from "../../../assets/professional-development.png";
 import diplomat from "../../../assets/diplomat.png";
-import AboutCard from "./AboutCard";
 import GlobusSVG from "./GlobusSVG";
+import OverviewCard from "./OverviewCard";
 
-function AboutUs() {
+function Overview() {
   return (
     <section className="h-full  sticky -top-[280px]">
       <div className="h-full w-full">
@@ -50,36 +50,34 @@ function AboutUs() {
           </div>
         </div>
         {/* globus and overview */}
-        <div className="h-full w-full">
-          <div className="h-full flex w-full ">
-            {/* animated globus */}
-            <div className="h-[800px] w-[1000px]  flex-1 relative overflow-hidden">
-              <div className="absolute h-full w-full  right-[5%] ">
-                <div className="h-[800px] w-[1000px] absolute -right-[10%]">
-                  <GlobusSVG />
-                </div>
+        <div className="h-full flex w-full ">
+          {/* animated globus */}
+          <div className="flex-1 h-[800px] w-[1000px] relative overflow-hidden">
+            <div className="absolute h-full w-full right-[5%]">
+              <div className="h-[800px] w-[1000px] absolute -right-[10%]">
+                <GlobusSVG />
               </div>
             </div>
-            {/* About Overview */}
-            <div className="flex-1 pl-3 lg:relative absolute left-[50%] lg:left-0 -translate-x-[50%] lg:-translate-x-0 pt-[200px] lg:pt-0  w-full ">
-              <div className="grid grid-cols-2 gap-y-24 pt-24 lg:pl-0 sm:pl-[108px] pl-4 md:mx-0 w-full">
-                <AboutCard
-                  text={"Years of expertise"}
-                  number={"10"}
-                  img={reward}
-                />
-                <AboutCard
-                  text={"Professionals"}
-                  number={"120+"}
-                  img={professional}
-                />
-                <AboutCard
-                  text={"Represented in 12 countries"}
-                  number={"12"}
-                  img={diplomat}
-                />
-                <AboutCard text={"Clients"} number={"2000+"} img={expertise} />
-              </div>
+          </div>
+          {/* About Overview */}
+          <div className="flex-1 pl-3 lg:relative absolute left-[50%] lg:left-0 -translate-x-[50%] lg:-translate-x-0 pt-[200px] lg:pt-0  w-full ">
+            <div className="grid grid-cols-2 gap-y-24 pt-24 lg:pl-0 sm:pl-[108px] pl-4 md:mx-0 w-full">
+              <OverviewCard
+                text={"Years of expertise"}
+                number={"10"}
+                img={reward}
+              />
+              <OverviewCard
+                text={"Professionals"}
+                number={"120+"}
+                img={professional}
+              />
+              <OverviewCard
+                text={"Represented in 12 countries"}
+                number={"12"}
+                img={diplomat}
+              />
+              <OverviewCard text={"Clients"} number={"2000+"} img={expertise} />
             </div>
           </div>
         </div>
@@ -88,4 +86,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default Overview;
