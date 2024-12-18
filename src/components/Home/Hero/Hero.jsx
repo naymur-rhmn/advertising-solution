@@ -1,10 +1,10 @@
-import console from "../../../assets/plan_console.svg";
-import phone from "../../../assets/phone.svg";
+import console from "../../../assets/page/home/svg/plan_console.svg";
+import phone from "../../../assets/page/home/svg/phone.svg";
 import { RiArrowRightSLine, RiArrowRightLine } from "@remixicon/react";
 
 function Hero() {
   return (
-    <section className="relative z-40 pt-[130px] pb-[180px] md:pt-[210px]  md:pb-[280px]">
+    <section className="relative z-50 pt-[130px] pb-[180px] md:pt-[210px]  md:pb-[280px] bg-white">
       {/* background */}
       <div className="overflow-hidden">
         <div className="hero-bg-layer2">

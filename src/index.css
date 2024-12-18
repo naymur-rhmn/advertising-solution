@@ -23,7 +23,23 @@
     @apply text-secondary;
   }
 }
-/* hero section */
+
+@layer components {
+  .center-of-counter {
+    @apply left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] transition;
+  }
+  .console-of-counter {
+    @apply top-8 -left-6 -translate-x-0 -translate-y-0;
+  }
+  .insight-of-counter {
+    @apply right-[120px] bottom-8;
+  }
+  .report-of-counter {
+    @apply right-10 top-[100px];
+  }
+}
+
+/* ======================================= hero section ======================================= */
 .hero-bg-layer2 {
   position: absolute;
   top: 0;
@@ -88,7 +104,6 @@
 }
 
 /* hero right images */
-
 .image-container::after {
   position: absolute;
   content: "";
@@ -101,10 +116,7 @@
   z-index: -1;
 }
 
-@media (min-width: 640px) and (max-width: 768px) {
-}
-
-/* about us */
+/* ======================================= about us ======================================= */
 /* section overlay */
 .about-overlay {
   position: absolute;
@@ -128,7 +140,7 @@
   }
 }
 
-/* platform overview */
+/* ======================================= platform overview ======================================= */
 .bg-section-alt {
   position: relative;
   transform: skewY(-12deg);
@@ -172,4 +184,59 @@
 
 .imgboxshadow {
   box-shadow: 0 55px 55px rgba(106, 100, 128, 0.25);
+}
+
+/* ======================================= features ======================================= */
+.feature-bg {
+  position: absolute;
+  background-color: #5d4e7a;
+  height: 400px;
+  width: 100%;
+  bottom: -160px;
+  left: 0;
+  z-index: -1;
+  transform: skewY(-10deg);
+}
+
+/* ======================================= Image Banner ======================================= */
+.fixed-banner-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: url("./assets/page/home/fixed-sec-bg.avif");
+}
+
+/* ======================================= brand Collaboration ======================================= */
+.brand-bg {
+  position: absolute;
+  background-color: #ffffff;
+  height: 400px;
+  width: 100%;
+  top: -160px;
+  left: 0;
+  z-index: -1;
+  transform: skewY(-10deg);
+}
+
+@media screen and (min-width: 768px) {
+  .brand-image:nth-child(-n + 5) {
+    border-bottom: 1px solid #dbdff0;
+  }
+  .brand-image:not(:nth-child(5)):not(:nth-child(10)) {
+    border-right: 1px solid #dbdff0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .brand-image:nth-child(2n + 1) {
+    border-right: 1px solid #dbdff0;
+  }
+  .brand-image:not(:nth-child(9)):not(:nth-child(10)) {
+    border-bottom: 1px solid #dbdff0;
+  }
 }

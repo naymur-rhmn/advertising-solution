@@ -1,15 +1,15 @@
 import { RiArrowRightLine } from "@remixicon/react";
-import expertise from "../../../assets/customer-relationship-management.png";
-import reward from "../../../assets/reward.png";
-import professional from "../../../assets/professional-development.png";
-import diplomat from "../../../assets/diplomat.png";
+import expertise from "../../../assets/page/home/customer-relationship-management.png";
+import reward from "../../../assets/page/home/reward.png";
+import professional from "../../../assets/page/home/professional-development.png";
+import diplomat from "../../../assets/page/home/diplomat.png";
 import GlobusSVG from "./GlobusSVG";
 import OverviewCard from "./OverviewCard";
 
 function Overview() {
   return (
-    <section className="h-full  sticky -top-[280px]">
-      <div className="h-full w-full">
+    <section className="h-full sticky -top-[280px] z-40">
+      <div className="h-full w-full bg-white">
         <div className="about-overlay -z-10"></div>
         <div className="max-w-screen-lg px-4 mx-auto z-50 ">
           {/* section title */}
