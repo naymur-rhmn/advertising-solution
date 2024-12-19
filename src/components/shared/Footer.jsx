@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className="bg-white z-50 relative">
-      <div className="max-w-screen-lg mx-auto px-4">
+      <div className="lg-container">
         <div className="grid md:grid-cols-4 grid-cols-2 gap-4  border-t py-10">
           {/* single column */}
           <div>
@@ -47,7 +47,7 @@ function Footer() {
         </div>
       </div>
       <div className="bg-[#EBF1F8] py-6">
-        <div className="max-w-screen-lg mx-auto px-4">
+        <div className="lg-container">
           <div className="flex gap-2">
             <p className="text-base w-1/3">&copy;Adaptive</p>
             <div className="flex list-none gap-1 font-light text-primary md:w-1/3">

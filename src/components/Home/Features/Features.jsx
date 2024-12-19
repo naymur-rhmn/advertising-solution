@@ -11,7 +11,7 @@ function Features() {
   return (
     <section className="relative bg-[#321767] py-10 z-50">
       <div className="feature-bg"></div>
-      <div className="max-w-screen-lg mx-auto px-4 z-30">
+      <div className="lg-container z-30">
         <div className="flex flex-col md:flex-row md:gap-4 ">
           <div className="md:sticky top-6 flex-1 text-center md:text-left mb-[70px] md:h-full">
             <div className="flex items-center justify-center md:justify-start mb-5">

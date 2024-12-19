@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import { Link as Scroll } from "react-scroll";
 import notebook from "../../../assets/page/mobile/svg/notebook.svg";
 import DMButton from "../DMButton/DMButton";
 import useActiveTab from "../../../hooks/useActiveTab";
@@ -16,7 +16,7 @@ function DsiplayMobileBanner() {
         <div className="h-[100px] md:w-[60%] w-[100%] bg-gradient-to-r to-[#74EAE3] md:from-[#365CF7] from-[#3d30fd] absolute sm:bottom-0 -bottom-6 right-0"></div>
       </div>
       {/* section content */}
-      <div className="max-w-screen-lg mx-auto px-4 z-10">
+      <div className="lg-container z-10">
         <div className="flex">
           <div className="lg:w-[55%] md:w-[70%] sm:w-[80%] w-[90%] sm:pt-[180px] pt-[100px]  z-10 ">
             <h1 className="lg:text-[54px] md:text-[46px] text-[28px] sm:text-[32px] leading-normal text-white">
@@ -25,7 +25,7 @@ function DsiplayMobileBanner() {
             </h1>
           </div>
           <div className="hidden sm:block flex-1 pt-[125px]">
-            <div className="absolute bg-red-200 w-full left-0">
+            <div className="absolute w-full left-0">
               <div className="absolute lg:w-[800px] lg:h-auto lg:left-[48%] lg:right-0 left-[28%] right-4 z-0">
                 <img className="h-full w-full" src={notebook} />
               </div>
@@ -39,7 +39,7 @@ function DsiplayMobileBanner() {
             className="z-10 relative flex justify-center gap-4 px-10 sm:pb-4 pb-[150px]"
           >
             {/* Use react-scroll Link for smooth scroll */}
-            <Link
+            <Scroll
               className="flex-1"
               to="button-container"
               smooth={true}
@@ -50,9 +50,9 @@ function DsiplayMobileBanner() {
                   Display
                 </DMButton>
               }
-            </Link>
+            </Scroll>
             {/* Use react-scroll Link for smooth scroll */}
-            <Link
+            <Scroll
               className="flex-1"
               to="button-container"
               smooth={true}
@@ -63,7 +63,7 @@ function DsiplayMobileBanner() {
                   Mobile
                 </DMButton>
               }
-            </Link>
+            </Scroll>
           </div>
         </div>
       </div>

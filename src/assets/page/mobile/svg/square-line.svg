@@ -1,0 +1,8 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="diagonalLines" patternUnits="userSpaceOnUse" width="8" height="15">
+      <path d="M 0 0 L 30 0" stroke="#D7DCF0" stroke-width="2" />
+    </pattern>
+  </defs>
+  <rect width="200" height="200" fill="url(#diagonalLines)" />
+</svg>

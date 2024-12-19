@@ -10,7 +10,7 @@ function BrandCollaborations() {
   return (
     <section className=" bg-white relative z-40 pb-16">
       <div className="brand-bg"></div>
-      <div className="max-w-screen-lg mx-auto px-4">
+      <div className="lg-container px-4">
         {/* section title */}
         <div className="text-center px-20">
           <h2 className="md:text-[40px] lg:text-[44px] text-[26px] text-primary">

@@ -13,7 +13,7 @@ function Hero() {
         </div>
       </div>
       {/* hero body */}
-      <div className="max-w-screen-lg mx-auto px-4 z-50 h-full flex">
+      <div className="lg-container z-50 h-full flex">
         {/* hero content */}
         <div className="w-full sm:pr-[10%] pr-5 md:pr-0 md:w-2/3 text-white">
           <h1 className="lg:text-[54px] md:text-[46px] text-[28px] sm:text-[32px] leading-normal">

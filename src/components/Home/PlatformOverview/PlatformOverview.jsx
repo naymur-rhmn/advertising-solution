@@ -78,7 +78,7 @@ function PlatformOverview() {
     <section className="bg-white relative z-50">
       <div className="bg-section-alt relative"></div>
       <div className="relative overflow-hidden h-full w-full">
-        <div className="max-w-screen-lg mx-auto px-4 z-20">
+        <div className="lg-container z-20">
           {/* section title */}
           <div className="py-4">
             <div className="h-24 w-24 rounded-full bg-[#A8A6F9] flex items-center justify-center">
