@@ -1,5 +1,5 @@
 import { MdDashboard } from "react-icons/md";
-import appStore from "../../../../assets/page/mobile/svg/app-store.svg";
+import appStore from "../../../../assets/images/mobile/svg/app-store.svg";
 import Promo from "../../Promo/Promo";
 
 function MobileApp() {
@@ -8,9 +8,9 @@ function MobileApp() {
       {/* section gradient bg */}
       <div className="absolute md:-top-36 -top-4 left-0 h-[105%] lg:h-[100%] md:h-[140%] w-full bg-gradient-to-r to-[white] from-[#faf5f5] -skew-y-12 -z-10">
         {/* line */}
-        <div className="h-8 lg:w-[40%] w-[60%] bg-gradient-to-l to-[#44f9ad] from-[#492EF9] absolute -bottom-8 right-0"></div>
+        <div className="h-8 md:h-16 lg:w-[40%] w-[60%] bg-gradient-to-l to-[#44f9ad] from-[#492EF9] absolute md:-bottom-16 -bottom-8 right-0"></div>
         {/* line */}
-        <div className="h-8 lg:w-[15%] w-[25%] bg-[#ECEFFA] absolute -bottom-16 right-0"></div>
+        <div className="h-8 md:h-16 lg:w-[15%] w-[25%] bg-[#ECEFFA] absolute -bottom-16 md:-bottom-32 right-0"></div>
         {/* square line svg */}
         <div
           className={`lg:h-48 h-24 w-[40%] absolute left-0 bottom-0 square-line`}

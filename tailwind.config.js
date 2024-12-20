@@ -11,9 +11,7 @@ export default {
     extend: {
       fontFamily: {
         yatra: ["Yatra One", "system-ui"],
-        asapCondensed: ["Asap Condensed", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
-        roboto: ["Roboto", "sans-serif"],
       },
       colors: {
         primary: "#3F3F67",

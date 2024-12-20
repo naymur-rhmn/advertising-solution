@@ -1,8 +1,8 @@
 import { RiArrowRightLine } from "@remixicon/react";
-import expertise from "../../../assets/page/home/customer-relationship-management.png";
-import reward from "../../../assets/page/home/reward.png";
-import professional from "../../../assets/page/home/professional-development.png";
-import diplomat from "../../../assets/page/home/diplomat.png";
+import expertise from "../../../assets/images/home/customer-relationship-management.png";
+import reward from "../../../assets/images/home/reward.png";
+import professional from "../../../assets/images/home/professional-development.png";
+import diplomat from "../../../assets/images/home/diplomat.png";
 import GlobusSVG from "./GlobusSVG";
 import OverviewCard from "./OverviewCard";
 

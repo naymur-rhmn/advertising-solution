@@ -1,5 +1,5 @@
-import console from "../../../assets/page/home/svg/plan_console.svg";
-import phone from "../../../assets/page/home/svg/phone.svg";
+import console from "../../../assets/images/home/svg/plan_console.svg";
+import phone from "../../../assets/images/home/svg/phone.svg";
 import { RiArrowRightSLine, RiArrowRightLine } from "@remixicon/react";
 
 function Hero() {

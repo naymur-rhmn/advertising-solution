@@ -4,10 +4,10 @@ import { HiMenuAlt2 } from "react-icons/hi";
 import { TbMenu4 } from "react-icons/tb";
 import { FiBarChart } from "react-icons/fi";
 import PlatformCard from "./platformCard";
-import platform from "../../../assets/page/home/svg/platform-1.svg";
-import insight from "../../../assets/page/home/svg/insights.svg";
-import setting from "../../../assets/page/home/svg/console.svg";
-import report from "../../../assets/page/home/svg/report.svg";
+import platform from "../../../assets/images/home/svg/platform-1.svg";
+import insight from "../../../assets/images/home/svg/insights.svg";
+import setting from "../../../assets/images/home/svg/console.svg";
+import report from "../../../assets/images/home/svg/report.svg";
 
 function PlatformOverview() {
   const [counter, setCounter] = useState(0);

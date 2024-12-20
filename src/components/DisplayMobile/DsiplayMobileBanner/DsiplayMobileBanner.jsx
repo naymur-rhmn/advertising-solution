@@ -1,5 +1,5 @@
 import { Link as Scroll } from "react-scroll";
-import notebook from "../../../assets/page/mobile/svg/notebook.svg";
+import notebook from "../../../assets/images/mobile/svg/notebook.svg";
 import DMButton from "../DMButton/DMButton";
 import useActiveTab from "../../../hooks/useActiveTab";
 

@@ -1,10 +1,10 @@
 import { FaBrain } from "react-icons/fa";
-import database from "../../../assets/page/home/database.png";
-import weather from "../../../assets/page/home/weather.png";
-import dynamic from "../../../assets/page/home/dynamic.png";
-import location from "../../../assets/page/home/location.png";
-import smart from "../../../assets/page/home/smart.png";
-import sync from "../../../assets/page/home/sync.png";
+import database from "../../../assets/images/home/database.png";
+import weather from "../../../assets/images/home/weather.png";
+import dynamic from "../../../assets/images/home/dynamic.png";
+import location from "../../../assets/images/home/location.png";
+import smart from "../../../assets/images/home/smart.png";
+import sync from "../../../assets/images/home/sync.png";
 import FeatureCard from "./FeatureCard";
 
 function Features() {

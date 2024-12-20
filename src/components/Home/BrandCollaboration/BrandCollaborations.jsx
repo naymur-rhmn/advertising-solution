@@ -1,9 +1,9 @@
-import jumia from "../../../assets/page/home/brand-logo/Jumia-Logo.png";
-import vogue from "../../../assets/page/home/brand-logo/vogue-logo.png";
-import nike from "../../../assets/page/home/brand-logo/nike-logo.png";
-import mastercard from "../../../assets/page/home/brand-logo/mastercard-logo.png";
-import Mango from "../../../assets/page/home/brand-logo/Mango-logo.png";
-import levis from "../../../assets/page/home/brand-logo/Levis-Logo.png";
+import jumia from "../../../assets/images/home/brand-logo/Jumia-Logo.png";
+import vogue from "../../../assets/images/home/brand-logo/vogue-logo.png";
+import nike from "../../../assets/images/home/brand-logo/nike-logo.png";
+import mastercard from "../../../assets/images/home/brand-logo/mastercard-logo.png";
+import Mango from "../../../assets/images/home/brand-logo/Mango-logo.png";
+import levis from "../../../assets/images/home/brand-logo/Levis-Logo.png";
 import SingleBrand from "./SingleBrand";
 
 function BrandCollaborations() {

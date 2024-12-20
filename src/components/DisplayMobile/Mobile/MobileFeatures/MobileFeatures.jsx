@@ -2,6 +2,9 @@ import { useState } from "react";
 import { PiOpenAiLogoDuotone } from "react-icons/pi";
 import SectionIcon from "../../../shared/SectionIcon";
 import FeaturesTab from "./FeaturesTab";
+import BannerTabContent from "./BannerTabContent";
+import BannerMediaTabContent from "./BannerMediaTabContent";
+import BannerScreenTabContent from "./BannerScreenTabContent";
 
 function MobileFeatures() {
   const [activeTab, setActiveTab] = useState(1);
@@ -10,8 +13,8 @@ function MobileFeatures() {
     setActiveTab(tab);
   };
   return (
-    <section className="lg:pt-20 md:pt-32 pt-20 h-[100vh]">
-      <div className="lg-container  pb-6 md:pb-14  border-b">
+    <section className="lg:pt-20 md:pt-32 pt-20">
+      <div className="lg-container pb-6 md:pb-14">
         {/* section title */}
         <div className="text-center flex flex-col items-center px-8 md:px-4 md:w-[600px] mx-auto">
           <SectionIcon>
@@ -24,6 +27,11 @@ function MobileFeatures() {
           </p>
         </div>
       </div>
+      {/* hr border */}
+      <div className="lg-container px-4">
+        <hr />
+      </div>
+      {/* features tabs */}
       <div className="lg-container pt-5 md:pt-8">
         <h3 className="text-gray-700 text-center sm:text-3xl text-[24px]">
           <span className="text-[#F6AC61]">Realize</span> any concept of the{" "}
@@ -48,16 +56,10 @@ function MobileFeatures() {
           }
         </div>
         {/* tabs content display conditionaly */}
-        <div className="md:mt-16 sm:mt-14 mt-8">
-          {activeTab === 1 && <p>Tab 1</p>}
-          {activeTab === 2 && <p>Tab 2</p>}
-          {activeTab === 3 && (
-            <p>
-              Tab 3 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Libero eos autem aperiam harum voluptatem sit distinctio odio
-              temporibus repudiandae ipsam?
-            </p>
-          )}
+        <div className="md:mt-16 sm:mt-2 mt-1">
+          {activeTab === 1 && <BannerTabContent />}
+          {activeTab === 2 && <BannerScreenTabContent />}
+          {activeTab === 3 && <BannerMediaTabContent />}
         </div>
       </div>
     </section>

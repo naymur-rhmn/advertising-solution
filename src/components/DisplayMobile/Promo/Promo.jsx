@@ -1,5 +1,5 @@
-import { TiArrowRight } from "react-icons/ti";
 import SectionIcon from "../../shared/SectionIcon";
+import PromoLink from "./PromoLink";
 
 function Promo({ Component, title, children, btnText }) {
   return (
@@ -14,12 +14,7 @@ function Promo({ Component, title, children, btnText }) {
         {children}
       </div>
       {/* link to navigate */}
-      <li className="mt-4 italic flex items-center group hover:cursor-pointer w-fit ">
-        <p className="text-blue-700 ">{btnText}</p>
-        <span className="group-hover:translate-x-0.5 transition-all">
-          <TiArrowRight color="#1D4ED8" size={24} />
-        </span>
-      </li>
+      <PromoLink btnText={btnText} />
     </>
   );
 }
