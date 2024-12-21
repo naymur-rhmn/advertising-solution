@@ -13,7 +13,7 @@ function MobileFeatures() {
     setActiveTab(tab);
   };
   return (
-    <section className="lg:pt-20 md:pt-32 pt-20">
+    <section className="lg:pt-20 md:pt-48 pt-28">
       <div className="lg-container pb-6 md:pb-14">
         {/* section title */}
         <div className="text-center flex flex-col items-center px-8 md:px-4 md:w-[600px] mx-auto">
@@ -55,7 +55,6 @@ function MobileFeatures() {
             </FeaturesTab>
           }
         </div>
-        {/* tabs content display conditionaly */}
         <div className="md:mt-16 sm:mt-2 mt-1">
           {activeTab === 1 && <BannerTabContent />}
           {activeTab === 2 && <BannerScreenTabContent />}

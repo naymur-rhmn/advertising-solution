@@ -27,7 +27,7 @@
     @apply max-w-screen-lg mx-auto px-4;
   }
   .section-title {
-    @apply text-[24px] sm:text-[28px] md:text-[40px] lg:text-[44px] text-primary md:mt-[20px] mt-4 mb-4 md:mb-[30px];
+    @apply text-[24px] leading-snug sm:text-[28px] md:text-[40px] lg:text-[44px] text-primary md:mt-[20px] mt-4 mb-4 md:mb-[30px];
   }
   .center-of-counter {
     @apply left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] transition;
