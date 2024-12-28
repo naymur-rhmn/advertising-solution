@@ -33,8 +33,8 @@ const VideoFeatures = () => {
         <div className="flex">
           {/* image */}
           <div className="flex-1 hidden lg:block">
-            <div className="absolute left-0 h-full w-full">
-              <div className="absolute h-full right-[51%] w-[690px]">
+            <div className="absolute left-0 w-full">
+              <div className="absolute right-[51%] w-[690px]">
                 <img src={tablet} alt="video tablet" />
               </div>
             </div>
