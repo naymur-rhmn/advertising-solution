@@ -26,9 +26,27 @@
   .lg-container {
     @apply max-w-screen-lg mx-auto px-4;
   }
-  .section-title {
-    @apply text-[24px] leading-snug sm:text-[28px] md:text-[40px] lg:text-[44px] text-primary md:mt-[20px] mt-4 mb-4 md:mb-[30px];
+  .hero-title {
+    @apply lg:text-[54px] md:text-[46px] text-[28px] sm:text-[32px] leading-normal;
   }
+
+  /* alt hero title are used in every page title except home page */
+  .alt-hero-title {
+    @apply md:text-[46px] text-[28px] sm:text-[32px] leading-normal;
+  }
+  /* section title used in mainly display and mobile page */
+  .section-title {
+    @apply text-[24px] leading-snug sm:text-[28px] md:text-[40px] text-primary md:mt-[20px] mt-4 mb-4 md:mb-[26px];
+  }
+
+  .alt-section-title {
+    @apply text-[22px] sm:text-[26px] md:text-[32px] text-primary leading-snug md:mt-6 mt-4 mb-4 md:mb-[26px];
+  }
+
+  .alt-section-subtitle {
+    @apply text-lg sm:text-xl md:text-[22px] px-4 sm:px-6 md:px-12;
+  }
+
   .center-of-counter {
     @apply left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] transition;
   }
@@ -248,4 +266,18 @@
 /* ======================================= MobileApp section ======================================= */
 .square-line {
   background-image: url("../src/assets/page/mobile/svg/square-line.svg");
+}
+
+/* ======================================= Data Management section ======================================= */
+.dm-tab-img {
+  animation: rising 0.6s ease-in-out forwards;
+}
+
+@keyframes rising {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

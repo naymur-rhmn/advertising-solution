@@ -19,7 +19,7 @@ function DsiplayMobileBanner() {
       <div className="lg-container z-10">
         <div className="flex">
           <div className="lg:w-[55%] md:w-[70%] sm:w-[80%] w-[90%] sm:pt-[180px] pt-[100px]  z-10 ">
-            <h1 className="lg:text-[54px] md:text-[46px] text-[28px] sm:text-[32px] leading-normal text-white">
+            <h1 className="hero-title text-white">
               Discover all our channels and formats. Find the most suitable for
               you
             </h1>

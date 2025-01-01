@@ -16,7 +16,7 @@ function Hero() {
       <div className="lg-container z-50 h-full flex">
         {/* hero content */}
         <div className="w-full sm:pr-[10%] pr-5 md:pr-0 md:w-2/3 text-white">
-          <h1 className="lg:text-[54px] md:text-[46px] text-[28px] sm:text-[32px] leading-normal">
+          <h1 className="hero-title">
             Full-stack <span className="text-orange-300">programmatic</span>{" "}
             advertising ecosystem
           </h1>

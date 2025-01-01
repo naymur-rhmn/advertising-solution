@@ -15,13 +15,15 @@ const MobileDescription = () => {
     setTab(tab);
   };
   return (
-    <section className="md:mt-[110px] sm:mt-[60px] mt-10 relative sm:pb-36 pb-10">
+    <section className="lg:mt-[110px] sm:mt-[60px] mt-10 relative sm:pb-36 pb-10">
       {/* section bg */}
       <div className="absolute top-[90px] left-0 h-[70%] w-full bg-gradient-to-l to-[#492EF9] from-[#DC2A81] -skew-y-12">
         {/* line */}
-        <div className="h-8 md:h-16 lg:w-[35%] w-[45%] bg-gradient-to-l to-[#44f9ad] from-[#492EF9] absolute md:-top-16 -top-8 left-0"></div>
+        <div className="hidden md:block  md:h-12 w-[45%] bg-gradient-to-r to-[#44f9ad] from-[#492EF9] absolute md:-top-10 -top-8 right-0"></div>
+      </div>
+      <div className="absolute top-[90px] left-0 h-[70%] w-full bg-gradient-to-l to-[#492EF9] from-[#DC2A81] skew-y-12">
         {/* line */}
-        <div className="h-8 md:h-16 lg:w-[30%] w-[30%] bg-[#ECEFFA] absolute md:-bottom-16 -bottom-8 right-0"></div>
+        <div className="hidden md:block md:h-12 w-[45%] bg-gradient-to-l to-[#44f9ad] from-[#492EF9] absolute md:-top-10 -top-8 left-0"></div>
       </div>
       {/* section container */}
       <div className="lg-container relative">
@@ -29,7 +31,7 @@ const MobileDescription = () => {
           {/* bg image */}
           <div className="hidden md:block h-full w-full overflow-hidden relative bg-black rounded-l-lg">
             <p className="uppercase bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-6xl font-bold tracking-wider absolute top-1/2 -translate-y-1/2 left-1/3 -translate-x-1/3">
-              HYBE
+              bfly
             </p>
             <div
               style={{ backgroundImage: `url(${phone})` }}
@@ -41,8 +43,8 @@ const MobileDescription = () => {
           </div>
           {/* display title in small diveces */}
           <div className="flex md:hidden bg-black py-4 items-center justify-center rounded-t-lg">
-            <p className="uppercase bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-5xl font-semibold tracking-wider">
-              HYBE
+            <p className="uppercase bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-4xl font-semibold tracking-wider">
+              bfly
             </p>
           </div>
 
@@ -60,13 +62,13 @@ const MobileDescription = () => {
             <div className="flex items-center gap-1">
               <div onClick={() => handleTab(1)} className="py-1 cursor-pointer">
                 <div
-                  style={{ backgroundColor: tab === 1 ? "red" : "#9CA3AF" }}
+                  style={{ backgroundColor: tab === 1 ? "#8327AA" : "#9CA3AF" }}
                   className={`h-[3px] w-8 `}
                 ></div>
               </div>
               <div onClick={() => handleTab(2)} className="py-1 cursor-pointer">
                 <div
-                  style={{ backgroundColor: tab === 2 ? "red" : "#9CA3AF" }}
+                  style={{ backgroundColor: tab === 2 ? "#8327AA" : "#9CA3AF" }}
                   className={`h-[3px] w-8 `}
                 ></div>
               </div>
