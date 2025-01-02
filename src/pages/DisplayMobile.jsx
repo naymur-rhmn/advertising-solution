@@ -1,3 +1,5 @@
+import DIntro from "../components/DisplayMobile/Display/DIntro";
+import DStream from "../components/DisplayMobile/Display/DStream";
 import DisplayMobileBanner from "../components/DisplayMobile/DsiplayMobileBanner/DsiplayMobileBanner";
 import Cases from "../components/DisplayMobile/Mobile/Cases/Cases";
 import MobileApp from "../components/DisplayMobile/Mobile/MobileApp/MobileApp";
@@ -25,7 +27,8 @@ function DisplayMobile() {
       )}
       {activeTab === "display" && (
         <>
-          <div className="h-[100vh] ">ddd</div>
+          <DIntro />
+          <DStream />
           <div className="h-[100vh] ">ddd</div>
         </>
       )}

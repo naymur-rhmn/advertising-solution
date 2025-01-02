@@ -12,31 +12,31 @@ const featuredData = [
   {
     id: 1,
     title: "PERSONALIZED ADS FOR DIFFERENT USER'S CATEGORIES",
-    desc: "Load previously collected data from other DMPs and create new unique segments for successful advertising campaigns.",
+    desc: "Load previously collected data from other DMPs and create new unique segments for successful advertising campaigns. Leverage insights to optimize targeting and drive higher engagement rates.",
     img: precise,
   },
   {
     id: 2,
     title: "HYBRID SEGMENTS FOR MORE PRECISE TARGETING",
-    desc: "With Hybrid Private Cloud, only you have access to data. We respect the GDPR and guarantee the privacy and storage of data in an anonymized form.",
+    desc: "With Hybrid Private Cloud, only you have access to data. We respect the GDPR and guarantee the privacy and storage of data in an anonymized form. Our secure infrastructure ensures compliance while enabling seamless data management for your business needs.",
     img: traffic,
   },
   {
     id: 3,
     title: "RELEVANT TRAFFIC SOURCES",
-    desc: "Work with premium traffic on various sites and use the most appropriate resources for placement, taking into account the cost and content.",
+    desc: "Work with premium traffic on various sites and use the most appropriate resources for placement, taking into account the cost and content. Maximize your reach by leveraging high-quality platforms tailored to your target audience. Ensure optimal ad performance with strategic placements and budget efficiency.",
     img: personalizede,
   },
   {
     id: 4,
     title: "CONVENIENT AND SECURE PRIVATE STORAGE",
-    desc: "Show users a relevant message by turning ads into a recommendation and increase audience loyalty.",
+    desc: "Show users a relevant message by turning ads into a recommendation and increase audience loyalty. Personalize the experience by tailoring content to their interests, making interactions more meaningful. Build trust by delivering value through thoughtful and engaging recommendations.",
     img: storage,
   },
   {
     id: 5,
     title: "WORKING WITH THIRD PARTY DATA",
-    desc: "Get the best insights about user's behavior and group the target audience, according to their characteristics to display personalized ads and achieve high performances.",
+    desc: "Gain valuable insights into user behavior and segment your target audience based on their unique characteristics. Deliver personalized ads to drive engagement and achieve exceptional performance in your campaigns.",
     img: partydata,
   },
 ];
@@ -74,11 +74,7 @@ const DMFeatures = () => {
 
           {/* featured image */}
           <div className="bg-white shadow-lg rounded-3xl absolute sm:-bottom-30 z-50 mt-20 overflow-hidden  ">
-            <img
-              className="max-h-[500px] h-auto mx-auto"
-              src={schema}
-              alt="schema"
-            />
+            <img className="max-h-[500px]  mx-auto" src={schema} alt="schema" />
           </div>
         </div>
       </div>

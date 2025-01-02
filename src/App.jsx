@@ -11,7 +11,7 @@ function App() {
       <ActiveTabProvider>
         <DisplayMobile />
       </ActiveTabProvider>
-      <DataManagement />
+      {/* <DataManagement /> */}
     </>
   );
 }
