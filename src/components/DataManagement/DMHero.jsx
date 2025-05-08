@@ -3,7 +3,7 @@ import intro from "../../assets/images/dmp/intro.svg";
 
 function DMHero() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative">
       {/* section bg */}
       <div className="absolute bg-gradient-to-l from-[#4AA7D9] to-[#492EF9] h-full min-h-[450px] w-full -skew-y-12 md:-top-48 -top-32 z-0 "></div>
       {/* section container */}

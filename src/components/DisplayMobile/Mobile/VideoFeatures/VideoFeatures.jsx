@@ -42,7 +42,7 @@ const VideoFeatures = () => {
           {/* content */}
           <div className="flex-1 pb-10 relative">
             <div className="lg:block  flex flex-col items-center ">
-              <SectionIcon>
+              <SectionIcon bgColor="#485EE8">
                 <SiGoogledisplayandvideo360
                   className="pl-0.5"
                   size={30}

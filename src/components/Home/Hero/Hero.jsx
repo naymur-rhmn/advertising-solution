@@ -13,10 +13,10 @@ function Hero() {
         </div>
       </div>
       {/* hero body */}
-      <div className="lg-container z-50 h-full flex">
+      <div className="lg-container h-full flex">
         {/* hero content */}
-        <div className="w-full sm:pr-[10%] pr-5 md:pr-0 md:w-2/3 text-white">
-          <h1 className="hero-title">
+        <div className="w-full sm:pr-[10%] pr-5 md:pr-0 md:w-2/3 text-white relative  z-40 ">
+          <h1 className="hero-title text-white">
             Full-stack <span className="text-orange-300">programmatic</span>{" "}
             advertising ecosystem
           </h1>

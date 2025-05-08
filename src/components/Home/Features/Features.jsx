@@ -9,7 +9,7 @@ import FeatureCard from "./FeatureCard";
 
 function Features() {
   return (
-    <section className="relative bg-[#321767] py-10 z-50">
+    <section className="relative bg-[#321767] md:pt-40 pt-16 pb-10  z-50">
       <div className="feature-bg"></div>
       <div className="lg-container z-30">
         <div className="flex flex-col md:flex-row md:gap-4 ">

@@ -17,7 +17,7 @@ function MobileFeatures() {
       <div className="lg-container pb-6 md:pb-14">
         {/* section title */}
         <div className="text-center flex flex-col items-center px-8 md:px-4 md:w-[600px] mx-auto">
-          <SectionIcon>
+          <SectionIcon bgColor="#485EE8">
             <PiOpenAiLogoDuotone size={30} color="C5E2FF" />
           </SectionIcon>
           <h2 className="section-title">Creatives</h2>

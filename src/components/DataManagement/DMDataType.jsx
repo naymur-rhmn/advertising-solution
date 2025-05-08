@@ -38,7 +38,7 @@ const DMDataType = () => {
       <div className="lg-container">
         {/* section title */}
         <div className="flex flex-col items-center text-center">
-          <SectionIcon bgColor="#E4E8F9">
+          <SectionIcon bgColor="#836BB3">
             <SiGoogledataproc color="#C2CBEF" size={30} />
           </SectionIcon>
           <div className="alt-section-title text-white">Data types</div>

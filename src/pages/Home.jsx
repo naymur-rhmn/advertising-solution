@@ -1,6 +1,4 @@
 import Hero from "../components/Home/Hero/Hero";
-import Footer from "../components/shared/Footer";
-import Navbar from "../components/shared/Navbar";
 import Overview from "../components/Home/Overview/Overview";
 import PlatformOverview from "../components/Home/PlatformOverview/PlatformOverview";
 import Features from "../components/Home/Features/Features";
@@ -10,15 +8,12 @@ import BrandCollaborations from "../components/Home/BrandCollaboration/BrandColl
 function Home() {
   return (
     <>
-      {/* <Navbar /> */}
-      {/* <OtherProjects /> */}
       <Hero />
       <Overview />
       <PlatformOverview />
       <Features />
-      <ImageBanner />
+      {/* <ImageBanner /> */}
       <BrandCollaborations />
-      <Footer />
     </>
   );
 }

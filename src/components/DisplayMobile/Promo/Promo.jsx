@@ -5,7 +5,7 @@ function Promo({ Component, title, children, btnText }) {
   return (
     <>
       <div className="lg:block flex flex-col items-center">
-        <SectionIcon bgColor="bg-blue-400">
+        <SectionIcon bgColor="#485EE8">
           <Component size={30} color="#C5E2FF" />
         </SectionIcon>
         <h2 className="section-title">{title}</h2>

@@ -6,13 +6,13 @@ import DMSegments from "../components/DataManagement/DMSegments";
 
 function DataManagement() {
   return (
-    <>
+    <div>
       <DMHero />
       <DMCycle />
       <DMFeatures />
       <DMDataType />
       <DMSegments />
-    </>
+    </div>
   );
 }
 

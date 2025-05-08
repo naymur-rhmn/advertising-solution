@@ -46,7 +46,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-[#EBF1F8] py-6">
+      <div className="bg-[#EBF1F8] py-4">
         <div className="lg-container">
           <div className="flex gap-2">
             <p className="text-base w-1/3">&copy;Adaptive</p>
@@ -56,6 +56,9 @@ function Footer() {
               <li>Privacy policy.</li>
             </div>
           </div>
+          <ul className="mt-1">
+            <li>Development in progress by Naymur Rahman.</li>
+          </ul>
         </div>
       </div>
     </footer>

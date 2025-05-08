@@ -61,6 +61,21 @@
   }
 }
 
+/* ======================================= navbar section ======================================= */
+.hy-logo {
+  position: relative;
+  /* background: transparent; */
+  /* z-index: 10; */
+}
+.hy-logo::before {
+  position: absolute;
+  content: "";
+  top: 80%;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  /* background: #7b7bc4; */
+}
 /* ======================================= hero section ======================================= */
 .hero-bg-layer2 {
   position: absolute;
@@ -69,7 +84,7 @@
   content: "";
   height: 100%;
   width: 100%;
-  background: rgb(73, 11, 144);
+  background: rgb(111, 26, 208);
   transform: skewY(-12deg) translateY(-16%);
   z-index: -1;
 }
@@ -179,6 +194,13 @@
   z-index: 1;
 }
 
+@media screen and (max-width: 768px) {
+  .bg-section-alt::after {
+    top: -80px;
+    height: 240px;
+  }
+}
+
 .orangebg {
   background: rgb(240, 210, 13);
   background: linear-gradient(
@@ -211,13 +233,20 @@
 /* ======================================= features ======================================= */
 .feature-bg {
   position: absolute;
-  background-color: #5d4e7a;
+  background-color: #321767;
   height: 400px;
   width: 100%;
   bottom: -160px;
   left: 0;
   z-index: -1;
   transform: skewY(-10deg);
+}
+
+@media screen and (max-width: 768px) {
+  .feature-bg {
+    height: 140px;
+    bottom: -70px;
+  }
 }
 
 /* ======================================= Image Banner ======================================= */

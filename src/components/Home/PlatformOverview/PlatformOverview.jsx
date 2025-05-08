@@ -77,12 +77,15 @@ function PlatformOverview() {
   return (
     <section className="bg-white relative z-50">
       <div className="bg-section-alt relative"></div>
-      <div className="relative overflow-hidden h-full w-full">
+      <div className="relative overflow-hidden h-full w-full md:pb-24 pb-0">
         <div className="lg-container z-20">
           {/* section title */}
           <div className="py-4">
-            <div className="h-24 w-24 rounded-full bg-[#A8A6F9] flex items-center justify-center">
+            <div className="hidden md:flex h-24 w-24 rounded-full bg-[#A8A6F9] items-center justify-center">
               <RiBuilding3Fill size={60} color="#D4D3FF" />
+            </div>
+            <div className="flex md:hidden h-16 w-16 rounded-full bg-[#A8A6F9] items-center justify-center">
+              <RiBuilding3Fill size={40} color="#D4D3FF" />
             </div>
             <h2 className="text-[24px] sm:text-[28px] md:text-[40px] lg:text-[44px]">
               Adaptive Platform
@@ -101,7 +104,7 @@ function PlatformOverview() {
                   Plan, launch, analyze, report
                 </h3>
                 {/* content cards */}
-                <div className="mt-10 flex flex-col gap-10">
+                <div className="md:mt-10 mt-5 flex flex-col md:gap-10 gap-4">
                   <PlatformCard
                     gradientBg={"orangebg"}
                     title={"Adaptive Insights"}
@@ -134,7 +137,7 @@ function PlatformOverview() {
                 </div>
               </div>
               {/* group image */}
-              <div className="flex-1">
+              <div className="flex-1 md:block hidden">
                 <div className="absolute left-0 w-full">
                   <div className="absolute left-[53%] w-full h-full ">
                     <div className="bg-green-300 rounded-xl w-[650px]">
@@ -150,14 +153,17 @@ function PlatformOverview() {
             </div>
 
             {/* second group */}
-            <div ref={counterRef} className="mt-[160px] flex pb-10">
+            <div
+              ref={counterRef}
+              className="md:mt-[160px] mt-[40px] flex md:pb-10 pb-2"
+            >
               {/* group content */}
               <div className="flex-1 pb-20">
                 <h3 className="md:text-[26px] sm:text-2xl text-xl uppercase">
                   Reduce costs. <br />
                   Drive maximum results.
                 </h3>
-                <div className="mt-10">
+                <div className="md:mt-10 mt-5">
                   <PlatformCard
                     gradientBg={"orangebg"}
                     title={"Adaptive platform"}
@@ -170,7 +176,7 @@ function PlatformOverview() {
                 </div>
               </div>
               {/* group image */}
-              <div className="flex-1">
+              <div className="flex-1 md:block hidden">
                 <div className="absolute left-0 w-full">
                   <div className="absolute left-[53%] w-full h-full ">
                     <div className="w-[650px] h-[380px] rounded-xl">
@@ -254,7 +260,7 @@ function PlatformOverview() {
                         </div>
                         {/* animate image with loading */}
                         <div className="absolute  top-0 left-0">
-                          <div className={"center-of-counter"}>
+                          {/* <div className={"center-of-counter"}>
                             <img src={report} alt="" />
                           </div>
                           <div className="center-of-counter">
@@ -268,7 +274,7 @@ function PlatformOverview() {
                             } absolute z-50`}
                           >
                             <img src={setting} alt="" />
-                          </div>
+                          </div> */}
                           {/* absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] */}
                         </div>
                       </div>
